@@ -2,6 +2,8 @@
 # => get data from web (html,json,xml)
 #  python -m pip install beautifulsoup4 =>library
 # => parse html 
+# git config --global user.name "prinsha36"
+#  git config --global user.email "prinshakhadka36@gmail.com"
 
 import requests
 from bs4 import BeautifulSoup
@@ -21,7 +23,7 @@ def scrape_books(url):
     response.encoding = response.apparent_encoding
     
 
-    soup = BeautifulSoup(response.text,"html.parser")
+    soup = BeautifulSoup(response.text,"html.parse")
     books = soup.find_all("article",class_="product_pod")
     all_books = []
     for book in books:
