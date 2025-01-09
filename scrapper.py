@@ -5,7 +5,7 @@
 # git config --global user.name "prinsha36"
 #  git config --global user.email "prinshakhadka36@gmail.com"
 
-# This is the git tutorial
+# This is the git tutorial branch
 
 import requests
 from bs4 import BeautifulSoup
