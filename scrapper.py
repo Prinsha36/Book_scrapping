@@ -23,7 +23,7 @@ def scrape_books(url):
     response.encoding = response.apparent_encoding
     
 
-    soup = BeautifulSoup(response.text,"html.parse")
+    soup = BeautifulSoup(response.text,"html.parser")
     books = soup.find_all("article",class_="product_pod")
     all_books = []
     for book in books:
